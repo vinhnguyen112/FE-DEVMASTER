@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực hành Jquery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>QUẢN LÝ THÔNG TIN SINH VIÊN</h1>
+    </header>
+
+    <section class="form-checck">
+      <div class="box">
+        <div class="list">
+          <button class="btn-add student">Thêm sinh viên</button>
+
+          <!-- Đã sửa chính tả thành btn-search -->
+          <div class="btn-search">
+            <input type="search" placeholder="Nhập từ khóa" />
+            <button class="btn-seach">Tìm kiếm</button>
+            <input type="text" placeholder="Sắp xếp" />
+          </div>
+        </div>
+
+        <div class="table">
+          <table border="1">
+            <h3>Danh sách sinh viên :</h3>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Mã Sinh Viên</th>
+                <th>Tên SV</th>
+                <th>Tuổi</th>
+                <th>Giới Tính</th>
+                <th>Hành Động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>SV001</td>
+                <td>Nguyễn Văn A</td>
+                <td>20</td>
+                <td>Nam</td>
+                <td class="group-btn">
+                  <button class="btn-action redd">XEM</button>
+                  <button class="btn-action yelloww">SỬA</button>
+                  <button class="btn-action bluee">XÓA</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Form nhập thông tin sinh viên -->
+      <div class="form-container">
+        <h2>Thông Tin Sinh Viên</h2>
+        <form id="studentForm" class="Form">
+          <div class="form-group">
+            <label for="studentId">Mã Sinh Viên:</label>
+            <input
+              type="text"
+              id="studentId"
+              placeholder="Ví dụ: SV002"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="studentName">Tên Sinh Viên:</label>
+            <input
+              type="text"
+              id="studentName"
+              placeholder="Nhập họ và tên"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="age">Tuổi:</label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Nhập tuổi"
+              min="18"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="sex">Giới Tính:</label>
+            <select id="sex">
+              <option value="true">Nam</option>
+              <option value="false">Nữ</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="birthDate">Ngày Sinh:</label>
+            <input type="date" id="birthDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="birthPlace">Nơi Sinh:</label>
+            <input type="text" id="birthPlace" required />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Địa Chỉ:</label>
+            <input type="text" id="address" required />
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-save">Lưu lại</button>
+            <button type="button" class="btn-cancel">Hủy bỏ</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

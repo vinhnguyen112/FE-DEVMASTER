@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <img src="../img/01.jpg" alt="img" id="img1" />
+      <button onclick="click1()">Btn</button>
+    </div>
+
+    <div>
+      <h1 class="name">Thay đổi màu sắc</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+    <script>
+      function click1() {
+        //chọn id=#img1 =>
+        $("#img1").fadeToggle();
+      }
+      //chọn phần tử = class
+      $(".name").css("color", "blue");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viết ứng dụng - thay đổi màu sắc</title>
+  </head>
+  <body>
+    <head>
+      <h1>Viết ứng dụng thay đổi màu sắc khi người dùng chọn màu</h1>
+    </head>
+    <main>
+      <section>
+        <h2>Chọn màu sắc</h2>
+        <div>
+          <button data-value="Red">Đỏ</button>
+          <button data-value="blue">Xanh</button>
+          <button data-value="yellow">Vàng</button>
+          <button data-value="gray">Ghi</button>
+          <button data-value="purple" id="btn1">Tím</button>
+        </div>
+        <div class="noi-dung">lập trình PHP</div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("running");
+
+        //gan mau cho nut
+        $("button").each(function () {
+          let val = $(this).attr("data-value");
+          console.log(val);
+          $(this).css("color", val);
+        });
+
+        //gan mau cho noi dung
+
+        //duyet lay ra gia tri data-value cua nut
+        $("button").click(function () {
+          let val = $(this).attr("data-value");
+          //set mau
+          $(".noi-dung").css("color", val);
+        });
+      });
+    </script>
+  </body>
+</html>

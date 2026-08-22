@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viết ứng dụng - thay đổi màu sắc</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .img-large {
+        max-width: 960px;
+        margin: 0 auto 1.5rem;
+      }
+
+      .img-large img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      div.img-small {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      div.img-small > div {
+        width: 20%;
+        height: 100px;
+      }
+      .img-small > div img,
+      .img-large img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-large">
+      <img src="../img/07.jpg" alt="Ảnh lớn" />
+    </div>
+    <div class="img-small">
+      <div>
+        <img src="../img/01.jpg" alt="Ảnh nhỏ 1" />
+      </div>
+      <div>
+        <img src="../img/02.jpg" alt="Ảnh nhỏ 2" />
+      </div>
+      <div>
+        <img src="../img/03.jpg" alt="Ảnh nhỏ 3" />
+      </div>
+      <div>
+        <img src="../img/04.jpg" alt="Ảnh nhỏ 4" />
+      </div>
+      <div>
+        <img src="../img/05.jpg" alt="Ảnh nhỏ 5" />
+      </div>
+      <div>
+        <img src="../img/06.jpg" alt="Ảnh nhỏ 6" />
+      </div>
+    </div>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".img-small img").click(function () {
+          let str_src = $(this).attr("src");
+          $(".img-large img").attr("src", str_src).fadeOut(1000).fadeIn(500);
+
+          $(".img-small img").each(function () {
+            $(this).css({
+              border: "none",
+            });
+          });
+
+          $(this).css({
+            border: "3px solid red",
+          });
+        });
+      });
+    </script>
+    <script></script>
+  </body>
+</html>

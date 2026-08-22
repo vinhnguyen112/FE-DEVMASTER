@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aaaaaaaaaa</title>
+    <style>
+      .tab-container {
+        max-width: 600px;
+        margin: 40px auto;
+        font-family: Arial, sans-serif;
+      }
+
+      /* CSS Các nút tab */
+      .tab-header {
+        display: flex;
+        gap: 10px;
+      }
+
+      .tab-btn {
+        padding: 10px 25px;
+        background: #d2d3d5;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .tab-btn.active {
+        background: #782a90;
+        color: #fff;
+      }
+
+      /* CSS Khung nội dung */
+      .tab-body {
+        border: 1px solid #ccc;
+        height: 300px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="tab-header">
+        <button class="tab-btn active" data-value="html.html" id="html">
+          HTML
+        </button>
+        <button class="tab-btn" data-value="css.html" id="css">CSS</button>
+        <button class="tab-btn" data-value="jquery.html" id="jquery">
+          Jquery
+        </button>
+        <button class="tab-btn" data-value="PHP.html" id="php">PHP</button>
+      </div>
+
+      <div class="tab-body" id="content"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".tab-btn").click(function () {
+          $(".tab-btn").removeClass("active");
+          $(this).addClass("active");
+          //load nội dung
+
+          let file = $(this).attr("data-value");
+          $("#content").load("../tabs/" + file);
+        });
+      });
+    </script>
+  </body>
+</html>
