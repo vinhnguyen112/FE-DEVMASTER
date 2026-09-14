@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm - Hoàng Hoan Nội Thất</title>
+  <meta name="description" content="Khám phá toàn bộ danh mục nội thất Hoàng Hoan: phòng khách, phòng ngủ, phòng bếp, phòng tắm, trẻ em, văn phòng, cầu thang và trang trí.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-white py-2 border-bottom sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="text-decoration-none">
+        <img src="img/logo.svg" alt="HOÀNG HOAN" height="42">
+      </a>
+      <nav class="navbar navbar-expand-md navbar-light p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav gap-4 small fw-bold text-uppercase">
+            <li class="nav-item"><a class="nav-link nav-link-custom text-dark px-0" href="index.html">Trang Chủ</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-dark px-0" href="gioi-thieu.html">Giới Thiệu</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active text-dark px-0" href="san-pham.html" aria-current="page">Sản Phẩm</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-dark px-0" href="tin-tuc.html">Tin Tức</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-dark px-0" href="doi-tac.html">Đối Tác</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-dark px-0" href="index.html#lien-he">Liên Hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER CAROUSEL -->
+  <section class="position-relative overflow-hidden">
+    <div id="spCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner.jpg" class="sp-banner-img" alt="Banner Hoàng Hoan 1">
+          <div class="banner-text-overlay">
+            <span class="italic-label">Trải nghiệm</span>
+            <span class="bold-label">không gian hiện đại</span>
+            <a href="chi-tiet-san-pham.html" class="btn-mua-ngay">mua ngay</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner.jpg" class="sp-banner-img" alt="Banner Hoàng Hoan 2">
+          <div class="banner-text-overlay">
+            <span class="italic-label">Phong cách</span>
+            <span class="bold-label">nội thất cao cấp</span>
+            <a href="chi-tiet-san-pham.html" class="btn-mua-ngay">khám phá ngay</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner.jpg" class="sp-banner-img" alt="Banner Hoàng Hoan 3">
+          <div class="banner-text-overlay">
+            <span class="italic-label">Sáng tạo</span>
+            <span class="bold-label">không gian sống</span>
+            <a href="chi-tiet-san-pham.html" class="btn-mua-ngay">xem thêm</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner.jpg" class="sp-banner-img" alt="Banner Hoàng Hoan 4">
+          <div class="banner-text-overlay">
+            <span class="italic-label">Đẳng cấp</span>
+            <span class="bold-label">thương hiệu việt</span>
+            <a href="chi-tiet-san-pham.html" class="btn-mua-ngay">tư vấn ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dot indicators -->
+      <div class="carousel-dots" role="tablist" aria-label="Banner slides">
+        <button class="dot active" data-bs-target="#spCarousel" data-bs-slide-to="0" aria-selected="true" aria-label="Slide 1"></button>
+        <button class="dot" data-bs-target="#spCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button class="dot" data-bs-target="#spCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button class="dot" data-bs-target="#spCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-btn prev" type="button" data-bs-target="#spCarousel" data-bs-slide="prev" aria-label="Previous">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button class="carousel-control-btn next" type="button" data-bs-target="#spCarousel" data-bs-slide="next" aria-label="Next">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- PRODUCT CATALOG -->
+  <main class="sp-main">
+    <div class="container">
+
+      <!-- 1. PHÒNG KHÁCH -->
+      <section class="cat-block" id="phong-khach">
+        <div class="cat-header">
+          <h2 class="cat-title">Phòng Khách</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pk-1.jpg" alt="Bàn uống nước" loading="lazy"></div>
+            <p class="prod-name">Bàn uống nước</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, nâu đậm)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pk-2.jpg" alt="Bàn uống nước 2" loading="lazy"></div>
+            <p class="prod-name">Bàn uống nước 2</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, nâu vân gỗ)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pk-3.jpg" alt="Kệ TV" loading="lazy"></div>
+            <p class="prod-name">Kệ TV</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(4 ngăn, gỗ lim)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pk-4.jpg" alt="Kệ để đồ" loading="lazy"></div>
+            <p class="prod-name">Kệ để đồ</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(4 ngăn, trắng gỗ)</p>
+            <p class="prod-price">2.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 2. PHÒNG NGỦ -->
+      <section class="cat-block" id="phong-ngu">
+        <div class="cat-header">
+          <h2 class="cat-title">Phòng Ngủ</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pn-1.jpg" alt="Giường châu Âu" loading="lazy"></div>
+            <p class="prod-name">Giường châu Âu</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, trắng sữa)</p>
+            <p class="prod-price">8.599.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pn-2.jpg" alt="Giường gỗ" loading="lazy"></div>
+            <p class="prod-name">Giường gỗ</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, nâu vân gỗ)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pn-3.jpg" alt="Kệ đầu giường" loading="lazy"></div>
+            <p class="prod-name">Kệ đầu giường</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(2 ngăn, gỗ lim)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pn-4.jpg" alt="Tủ quần áo" loading="lazy"></div>
+            <p class="prod-name">Tủ quần áo</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(4 cánh, trắng gỗ)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 3. PHÒNG BẾP -->
+      <section class="cat-block" id="phong-bep">
+        <div class="cat-header">
+          <h2 class="cat-title">Phòng Bếp</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pb-1.jpg" alt="Bàn ăn 6 ghế" loading="lazy"></div>
+            <p class="prod-name">Bàn ăn 6 ghế</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, trắng sữa)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pb-2.jpg" alt="Bàn trà" loading="lazy"></div>
+            <p class="prod-name">Bàn trà</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, nâu vân gỗ)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pb-3.jpg" alt="Bàn ăn 4 ghế" loading="lazy"></div>
+            <p class="prod-name">Bàn ăn 4 ghế</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(2 màu, gỗ tự nhiên)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pb-4.jpg" alt="Bàn ăn 8 ghế" loading="lazy"></div>
+            <p class="prod-name">Bàn ăn 8 ghế</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(4 ngăn, trắng gỗ)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 4. PHÒNG TẮM -->
+      <section class="cat-block" id="phong-tam">
+        <div class="cat-header">
+          <h2 class="cat-title">Phòng Tắm</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pt-1.jpg" alt="Bồn rửa mặt" loading="lazy"></div>
+            <p class="prod-name">Bồn rửa mặt</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, trắng sứ)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pt-2.jpg" alt="Tủ chậu rửa" loading="lazy"></div>
+            <p class="prod-name">Tủ chậu rửa</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Màu nâu đậm)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pt-3.jpg" alt="Tủ phòng tắm" loading="lazy"></div>
+            <p class="prod-name">Tủ phòng tắm</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(2 ngăn, gỗ lim)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/pt-4.jpg" alt="Tủ âm tường" loading="lazy"></div>
+            <p class="prod-name">Tủ âm tường</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Màu đen, 3 ngăn)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. TRẺ EM -->
+      <section class="cat-block" id="tre-em">
+        <div class="cat-header">
+          <h2 class="cat-title">Trẻ Em</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/te-1.jpg" alt="Bàn học trẻ em" loading="lazy"></div>
+            <p class="prod-name">Bàn học trẻ em</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, trắng sữa)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/te-2.jpg" alt="Giường tầng 1" loading="lazy"></div>
+            <p class="prod-name">Giường tầng 1</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, nâu vân gỗ)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/te-3.jpg" alt="Giường tầng 2" loading="lazy"></div>
+            <p class="prod-name">Giường tầng 2</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Gỗ thông, 2 tầng)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/te-4.jpg" alt="Cũi trẻ em" loading="lazy"></div>
+            <p class="prod-name">Cũi trẻ em</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Gỗ thông, trắng sữa)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 6. VĂN PHÒNG -->
+      <section class="cat-block" id="van-phong">
+        <div class="cat-header">
+          <h2 class="cat-title">Văn Phòng</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/vp-1.jpg" alt="Ghế văn phòng" loading="lazy"></div>
+            <p class="prod-name">Ghế văn phòng</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Chỉnh cao, lưng lưới)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/vp-2.jpg" alt="Bàn làm việc" loading="lazy"></div>
+            <p class="prod-name">Bàn làm việc</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, nâu vân gỗ)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/vp-3.jpg" alt="Bàn làm việc 2" loading="lazy"></div>
+            <p class="prod-name">Bàn làm việc 2</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(2 ngăn, gỗ tối màu)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/vp-4.jpg" alt="Giá sách" loading="lazy"></div>
+            <p class="prod-name">Giá sách</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(4 ngăn, trắng gỗ)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 7. CẦU THANG -->
+      <section class="cat-block" id="cau-thang">
+        <div class="cat-header">
+          <h2 class="cat-title">Cầu Thang</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/ct-1.jpg" alt="Cầu thang gỗ sồi" loading="lazy"></div>
+            <p class="prod-name">Cầu thang gỗ sồi</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Màu sáng tự nhiên)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/ct-2.jpg" alt="Cầu thang sắt uốn" loading="lazy"></div>
+            <p class="prod-name">Cầu thang sắt uốn</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Màu đen, viền vàng)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/ct-3.jpg" alt="Cầu thang hiện đại" loading="lazy"></div>
+            <p class="prod-name">Cầu thang hiện đại</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Gỗ + kính cường lực)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/ct-4.jpg" alt="Cầu thang gỗ nâu" loading="lazy"></div>
+            <p class="prod-name">Cầu thang gỗ nâu</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Gỗ tự nhiên, 12 bậc)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 8. TRANG TRÍ -->
+      <section class="cat-block" id="trang-tri">
+        <div class="cat-header">
+          <h2 class="cat-title">Trang Trí</h2>
+          <a href="#" class="cat-see-all">Xem tất cả <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="product-grid">
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/tt-1.jpg" alt="Gương trang trí" loading="lazy"></div>
+            <p class="prod-name">Gương trang trí</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Viền vàng, cỡ lớn)</p>
+            <p class="prod-price">8.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/tt-2.jpg" alt="Gương vuông" loading="lazy"></div>
+            <p class="prod-name">Gương vuông</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Size vừa, viền bạc)</p>
+            <p class="prod-price">3.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/tt-3.jpg" alt="Ghế đôn trang trí" loading="lazy"></div>
+            <p class="prod-name">Ghế đôn trang trí</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Bọc vải, nhiều màu)</p>
+            <p class="prod-price">12.999.000 VNĐ</p>
+          </a>
+          <a href="chi-tiet-san-pham.html" class="prod-card">
+            <div class="prod-img-wrap"><img src="img/tt-4.jpg" alt="Đèn chùm" loading="lazy"></div>
+            <p class="prod-name">Đèn chùm</p>
+            <div class="prod-stars">★★★★★</div>
+            <p class="prod-spec">(Pha lê, vàng cổ điển)</p>
+            <p class="prod-price">12.499.000 VNĐ</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 small">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-12 col-md-5">
+          <h4 class="text-uppercase border-bottom border-secondary pb-1 d-inline-block mb-3">Thông Tin Chung</h4>
+          <p class="text-white fw-bold mb-2">CÔNG TY TNHH HOÀNG HOAN</p>
+          <div class="d-flex align-items-center gap-2 mb-2 text-light">
+            <i class="fa-solid fa-phone text-gold"></i>
+            <span>0999.999.999</span>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-2 text-light">
+            <i class="fa-solid fa-envelope text-gold"></i>
+            <span>cskh@hoanghoan.vn</span>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-2 text-light">
+            <i class="fa-solid fa-location-dot text-gold"></i>
+            <span>Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h4 class="text-uppercase border-bottom border-secondary pb-1 d-inline-block mb-3">Về Chúng Tôi</h4>
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a href="gioi-thieu.html" class="text-light text-decoration-none">Giới thiệu</a></li>
+            <li><a href="san-pham.html" class="text-light text-decoration-none">Sản phẩm</a></li>
+            <li><a href="tin-tuc.html" class="text-light text-decoration-none">Tin tức</a></li>
+            <li><a href="doi-tac.html" class="text-light text-decoration-none">Đối tác</a></li>
+            <li><a href="index.html#lien-he" class="text-light text-decoration-none">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h4 class="text-uppercase border-bottom border-secondary pb-1 d-inline-block mb-3">Kết Nối Với Chúng Tôi</h4>
+          <div class="d-flex align-items-center gap-2 my-2">
+            <a href="#" class="btn-circle text-decoration-none" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="btn-circle text-decoration-none small fw-bold" aria-label="Zalo">Zalo</a>
+            <a href="#" class="btn-circle text-decoration-none" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <img src="img/bct.png" alt="Đã đăng ký Bộ Công Thương" class="img-fluid mt-2 bct-img">
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Sync custom dot indicators with Bootstrap carousel active state
+    const carousel = document.getElementById('spCarousel');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    carousel.addEventListener('slid.bs.carousel', (e) => {
+      dots.forEach(d => d.classList.remove('active'));
+      if (dots[e.to]) dots[e.to].classList.add('active');
+    });
+  </script>
+
+</body>
+</html>
