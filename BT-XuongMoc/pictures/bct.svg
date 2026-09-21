@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 68" width="150" height="51">
+  <defs>
+    <linearGradient id="bctGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <!-- Background with border -->
+  <rect x="2" y="2" width="196" height="64" rx="32" fill="#ffffff" stroke="#0284c7" stroke-width="3" filter="url(#shadow)" />
+  
+  <!-- Icon circle left -->
+  <circle cx="34" cy="34" r="23" fill="url(#bctGrad)" />
+  
+  <!-- Checkmark inside circle -->
+  <path d="M23 34 L30 42 L45 25" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Text: ĐÃ THÔNG BÁO -->
+  <text x="66" y="27" font-family="'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0284c7" letter-spacing="0.6">ĐÃ THÔNG BÁO</text>
+  
+  <!-- Text: BỘ CÔNG THƯƠNG -->
+  <text x="66" y="48" font-family="'Montserrat', 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="800" fill="#0f172a" letter-spacing="0.5">BỘ CÔNG THƯƠNG</text>
+</svg>

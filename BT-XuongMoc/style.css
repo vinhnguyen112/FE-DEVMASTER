@@ -254,8 +254,10 @@ body {
 /* 12. CSS cho các trang con (Giới thiệu, Sản phẩm...) */
 
 .about-hero-banner {
-  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
-  url("img/gioi-thieu-banner.jpg") center/cover no-repeat;
+  background-color: rgba(20, 20, 20, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 80px 0 160px;
   color: #fff;
 }
@@ -327,4 +329,463 @@ body {
   .about-hero-banner { padding: 60px 0 80px; }
   .about-card-overlay { padding: 25px 20px; margin-top: -40px; }
   .about-banner-title { font-size: 1.6rem; }
+}
+
+/* 14. Trang Sản Phẩm */
+.hero-sp-caption {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 5;
+  max-width: 520px;
+}
+.hero-caption__sub {
+  font-family: "Playball", "Great Vibes", "Dancing Script", cursive, "Georgia", serif;
+  font-size: 2.8rem;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.hero-caption__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+.btn-hero-buy {
+  background-color: #ffffff;
+  color: var(--navy);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-hero-buy:hover {
+  background-color: var(--gold);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(181, 136, 62, 0.3);
+}
+
+@media (max-width: 991px) {
+  .hero-sp-caption {
+    right: 6%;
+    max-width: 400px;
+  }
+  .hero-caption__sub {
+    font-size: 2.2rem;
+  }
+  .hero-caption__title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-sp-caption {
+    right: 5%;
+    max-width: 280px;
+  }
+  .hero-caption__sub {
+    font-size: 1.6rem;
+  }
+  .hero-caption__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+  .btn-hero-buy {
+    font-size: 0.8rem;
+    padding: 5px 16px;
+  }
+  .sp-category {
+    padding: 15px;
+  }
+}
+
+/* Category Sections */
+.sp-page-main {
+  background-color: #f7f7f7;
+}
+.sp-category {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+.sp-category__header {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+.sp-category__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-left: 14px;
+  margin: 0;
+}
+.sp-category__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 80%;
+  background-color: var(--gold);
+  border-radius: 2px;
+}
+.sp-category__link {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #888888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sp-category__link:hover {
+  color: var(--gold);
+}
+
+/* Thẻ sản phẩm */
+.sp-card {
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.25s, transform 0.25s;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sp-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+.sp-card__img-wrap {
+  aspect-ratio: 1;
+  background-color: #fcfcfc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.sp-card:hover .sp-card__img {
+  transform: scale(1.04);
+}
+.sp-card__body {
+  padding: 12px 10px 14px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sp-card__name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+.sp-card:hover .sp-card__name {
+  color: var(--gold);
+}
+.sp-card__stars {
+  font-size: 11px;
+  color: #f5a623;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+}
+.sp-card__desc {
+  font-size: 11px;
+  color: #777777;
+  margin-bottom: 4px;
+}
+.sp-card__price {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0;
+}
+
+/* 15. Trang Tất Cả Sản Phẩm */
+.sp-all-page {
+  padding-top: 80px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+.sp-filter-bar {
+  padding-bottom: 16px;
+}
+.sp-filter__label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-right: 12px;
+}
+.sp-filter__link {
+  font-size: 13px;
+  color: #777777;
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: all 0.2s ease;
+}
+.sp-filter__link:hover,
+.sp-filter__link.active {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* Dropdown Sắp Xếp */
+.sp-sort-dropdown .dropdown-toggle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+.sp-sort-dropdown .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.sp-sort-dropdown .dropdown-menu {
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 6px 0;
+  min-width: 170px;
+}
+.sp-sort-dropdown .dropdown-item {
+  font-size: 12px;
+  color: var(--navy);
+  padding: 6px 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.sp-sort-dropdown .dropdown-item:hover,
+.sp-sort-dropdown .dropdown-item.active {
+  background-color: rgba(181, 136, 62, 0.1);
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* Phân trang (Pagination) */
+.sp-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 35px;
+}
+.sp-page-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  background-color: #eee;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.sp-page-btn:hover {
+  background-color: #ddd;
+  color: var(--navy);
+}
+.sp-page-btn.active {
+  background-color: var(--gold);
+  color: #ffffff;
+}
+
+/* 16. Trang Tin Tức */
+.news-page {
+  padding-top: 85px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+.news-container-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 40px 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+.news-card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease;
+}
+.news-card:hover {
+  transform: translateY(-4px);
+}
+.news-card__img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+}
+.news-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.news-card:hover .news-card__img {
+  transform: scale(1.05);
+}
+.news-card__body {
+  padding-top: 15px;
+  flex-grow: 1;
+}
+.news-card__title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  line-height: 1.45;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+.news-card:hover .news-card__title {
+  color: var(--navy);
+}
+.news-card__desc {
+  font-size: 13px;
+  color: #444444;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/* 17. Trang Bài Viết (Chi tiết tin tức) */
+.post-detail-page {
+  padding-top: 85px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+.post-breadcrumb {
+  font-size: 13px;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.post-breadcrumb a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.post-breadcrumb a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.post-breadcrumb-separator {
+  margin: 0 8px;
+  color: #999;
+}
+.post-container-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 40px 35px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+.post-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.post-content p {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #333333;
+  text-align: justify;
+  margin-bottom: 14px;
+}
+.post-main-img {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Sidebar Bài viết mới */
+.sidebar-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+.sidebar-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45px;
+  height: 2.5px;
+  background-color: var(--gold);
+  border-radius: 1px;
+}
+.sidebar-post-item {
+  text-decoration: none;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+.sidebar-post-item:hover {
+  transform: translateX(4px);
+}
+.sidebar-post__thumb {
+  width: 90px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.sidebar-post__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.sidebar-post-item:hover .sidebar-post__thumb img {
+  transform: scale(1.08);
+}
+.sidebar-post__title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  line-height: 1.45;
+  margin: 0;
+  transition: color 0.2s;
+}
+.sidebar-post-item:hover .sidebar-post__title {
+  color: var(--gold);
 }
