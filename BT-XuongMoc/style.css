@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+/* 1. Biến màu sắc & Cấu hình cơ bản */
+:root {
+  --gold: #b5883e;
+  --gold-dark: #9a7232;
+  --navy: #2b304c;
+  --dark: #262626;
+  --light: #f8f6f2;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  padding-top: 62px;
+}
+
+/* 2. Các lớp tiện ích thương hiệu (Custom Utilities) */
+.text-gold { color: var(--gold) !important; }
+.bg-gold   { background-color: var(--gold) !important; color: #fff !important; }
+.text-navy { color: var(--navy) !important; }
+
+/* Điều hướng (Navigation) */
+.site-header { z-index: 1030; }
+.nav-link-custom {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #333 !important;
+  padding: 4px 0 !important;
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transition: width 0.25s;
+}
+.nav-link-custom.active,
+.nav-link-custom:hover {
+  color: var(--gold) !important;
+}
+.nav-link-custom.active::after,
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+/* 3. Banner chính (Hero Banner) */
+.hero-bg-img { height: 500px; }
+.hero-content { max-width: 720px; }
+.hero-title-main { font-size: 2.25rem; color: var(--navy); letter-spacing: 1px; }
+.hero-title-sub { font-size: 2rem; color: var(--gold); letter-spacing: 3px; }
+.hero-desc { font-size: 13px; color: #555; line-height: 1.8; }
+.btn-gold {
+  background-color: var(--gold);
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 11px 28px;
+  border-radius: 2px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+.btn-gold:hover {
+  background-color: var(--gold-dark);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(181, 136, 62, 0.35);
+}
+
+/* 4. Tiêu đề các phần (Section Titles) */
+.section-title {
+  font-size: 1.35rem;
+  color: var(--navy);
+  letter-spacing: 1.5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--gold);
+  border-radius: 2px;
+}
+.section-title--light { color: #fff; }
+
+/* 5. Khối danh mục (Category Box) */
+.category-box {
+  margin-top: -30px;
+  position: relative;
+  z-index: 10;
+}
+.category-card {
+  color: #444;
+  transition: color 0.2s, transform 0.2s;
+}
+.category-card:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+.cat-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* 6. Carousel Sản phẩm nổi bật (Featured Products) */
+.featured-section { background-color: var(--light); }
+.featured-wrap { padding: 0 42px; }
+.fp-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1.5px solid #ddd;
+  color: #555;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+}
+.fp-nav:hover {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+.fp-prev { left: -2px; }
+.fp-next { right: -2px; }
+.prod-card-item {
+  color: #222;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.prod-card-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+.prod-card-item:hover .prod-name { color: var(--gold); }
+.prod-img-wrap {
+  aspect-ratio: 1;
+  background-color: #f8f8f8;
+}
+.prod-img-wrap img { transition: transform 0.3s; }
+.prod-card-item:hover .prod-img-wrap img { transform: scale(1.05); }
+.prod-name { font-size: 13px; }
+.prod-stars { color: #f5a623; letter-spacing: 1px; }
+.prod-price { font-size: 13px; color: var(--gold); }
+
+/* 7. Phần Giới thiệu & Tại sao chọn chúng tôi (About & Why Us) */
+.section-about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(18,15,10,0.85), rgba(18,15,10,0.85)), url('pictures/ve-chung-toi/bg-about-us.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+.section-about > .container { position: relative; z-index: 1; }
+
+/* Khối lý do - chủ yếu dùng Bootstrap, chỉ tùy chỉnh kích thước icon */
+.why-icon-img { width: 44px; height: 44px; object-fit: contain; }
+
+/* 8. Phần Tin tức (News Section) */
+.news-main-card {
+  color: #222;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.news-main-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+.news-main-card:hover .news-main-title { color: var(--gold); }
+.news-sm-item {
+  color: #222;
+  transition: opacity 0.2s;
+}
+.news-sm-item:hover { opacity: 0.85; }
+.news-sm-item:hover .news-sm-title { color: var(--gold); }
+.link-more {
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  border-bottom: 1.5px solid var(--gold);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+.link-more:hover { opacity: 0.75; }
+
+/* 9. Phần Đối tác (Partners Section) */
+.partners-section { background-color: var(--light); }
+.partner-logo-wrap {
+  height: 80px;
+  transition: transform 0.2s;
+}
+.partner-logo-wrap:hover { transform: scale(1.08); }
+.partner-logo-img {
+  max-height: 70px;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(40%);
+  transition: filter 0.2s;
+}
+.partner-logo-wrap:hover .partner-logo-img { filter: grayscale(0%); }
+
+/* 10. Phần Kêu gọi hành động (CTA Section) */
+.cta-bg-overlay { background-color: rgba(181, 136, 62, 0.65); }
+.cta-chair-img {
+  max-height: 280px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  margin-top: -100px;
+  z-index: 10;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.25));
+}
+.cta-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* 11. Chân trang (Footer) */
+.footer-heading {
+  border-bottom: 1px solid #444;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: #383838;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.social-btn:hover {
+  background-color: var(--gold);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 12. CSS cho các trang con (Giới thiệu, Sản phẩm...) */
+
+.about-hero-banner {
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+  url("img/gioi-thieu-banner.jpg") center/cover no-repeat;
+  padding: 80px 0 160px;
+  color: #fff;
+}
+.about-card-overlay {
+  background-color: #fff;
+  padding: 45px 50px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 960px;
+  margin: -140px auto 60px auto;
+  position: relative;
+  z-index: 10;
+}
+
+.mission-box {
+  display: flex;          
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;          
+  padding: 18px 20px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.mission-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-color: rgba(181, 136, 62, 0.3);
+}
+.mission-icon-box {
+  display: flex;         
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;        
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background-color: rgba(181, 136, 62, 0.12);
+  color: var(--gold);
+  font-size: 20px;
+}
+.mission-title {
+  font-size: 15px;
+  color: var(--navy);
+}
+.mission-desc {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #666;
+}
+
+/* 13. Thích ứng giao diện (Responsive) */
+@media (max-width: 991px) {
+  .hero-bg-img { height: 400px; }
+  .hero-content { max-width: 480px; }
+  .hero-title-main { font-size: 1.5rem; }
+  .hero-title-sub { font-size: 1.6rem; }
+  .about-main-img { max-height: 280px; }
+}
+@media (max-width: 767px) {
+  .hero-bg-img { height: 300px; }
+  .hero-title-main { font-size: 1.2rem; }
+  .hero-title-sub { font-size: 1.3rem; }
+  .hero-desc { display: none; }
+  .featured-wrap { padding: 0 30px; }
+  .category-box { margin-top: -20px; }
+  .about-hero-banner { padding: 60px 0 80px; }
+  .about-card-overlay { padding: 25px 20px; margin-top: -40px; }
+  .about-banner-title { font-size: 1.6rem; }
+}
