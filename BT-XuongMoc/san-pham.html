@@ -3,668 +3,571 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sản phẩm nội thất Hoàng Hoan - Phòng khách, phòng ngủ, phòng bếp, phòng tắm, trẻ em, văn phòng, cầu thang, trang trí. Chất lượng cao, giá tốt nhất Hà Nội.">
+  <meta name="description" content="Sản phẩm nội thất Hoàng Hoan – Phòng khách, phòng ngủ, phòng bếp, phòng tắm, trẻ em, văn phòng, cầu thang, đồ trang trí.">
   <title>Sản Phẩm - Hoàng Hoan Nội Thất</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playball&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header fixed-top bg-white shadow-sm py-2">
-      <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.html" class="text-decoration-none">
-          <img src="./pictures/logo.png" alt="HOÀNG HOAN" height="46" />
-        </a>
-        <nav class="navbar navbar-expand-md navbar-light p-0">
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav gap-4 text-uppercase">
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="index.html">TRANG CHỦ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="gioi-thieu.html">GIỚI THIỆU</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom active" href="san-pham.html">SẢN PHẨM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="tin-tuc.html">TIN TỨC</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="doi-tac.html">ĐỐI TÁC</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="index.html#lien-he">LIÊN HỆ</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
 
-  <!-- ===== HERO BANNER (CAROUSEL) ===== -->
-  <section id="hero-banner" class="hero-sp-banner position-relative overflow-hidden">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Header -->
+  <header class="site-header fixed-top bg-white shadow-sm py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="text-decoration-none">
+        <img src="./pictures/logo.png" alt="HOÀNG HOAN" height="46">
+      </a>
+      <nav class="navbar navbar-expand-md navbar-light p-0">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav gap-4 text-uppercase">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">TRANG CHỦ</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="gioi-thieu.html">GIỚI THIỆU</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="san-pham.html">SẢN PHẨM</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="tin-tuc.html">TIN TỨC</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="doi-tac.html">ĐỐI TÁC</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#lien-he">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner Slider -->
+  <section class="sp-hero-banner position-relative overflow-hidden">
+    <div id="spHeroCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active position-relative">
-          <img
-            src="pictures/banner.png"
-            class="hero-bg-img w-100 object-fit-cover"
-            alt="Trải nghiệm không gian hiện đại cùng nội thất Hoàng Hoan"
-          >
-          <div class="hero-sp-caption">
-            <p class="hero-caption__sub">Trải nghiệm</p>
-            <h2 class="hero-caption__title">không gian hiện đại</h2>
-            <div>
-              <a href="#san-pham-list" class="btn-hero-buy">mua ngay</a>
-            </div>
-          </div>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="img/banner.png" class="sp-hero-img w-100 object-fit-cover" alt="Nội thất Hoàng Hoan">
         </div>
-        <div class="carousel-item position-relative">
-          <img
-            src="pictures/banner.png"
-            class="hero-bg-img w-100 object-fit-cover"
-            alt="Nội thất cao cấp phong cách châu Âu - Hoàng Hoan"
-          >
-          <div class="hero-sp-caption">
-            <p class="hero-caption__sub">Trải nghiệm</p>
-            <h2 class="hero-caption__title">không gian hiện đại</h2>
-            <div>
-              <a href="#san-pham-list" class="btn-hero-buy">mua ngay</a>
-            </div>
-          </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="img/bg-about-us.jpg" class="sp-hero-img w-100 object-fit-cover" alt="Phòng khách sang trọng">
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="img/gioi-thieu-banner.jpg" class="sp-hero-img w-100 object-fit-cover" alt="Phòng ngủ cao cấp">
         </div>
       </div>
-      <!-- Điều hướng carousel -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Slide trước">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <!-- Slider controls -->
+      <button class="carousel-control-prev sp-carousel-btn" type="button" data-bs-target="#spHeroCarousel" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left"></i>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Slide sau">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next sp-carousel-btn" type="button" data-bs-target="#spHeroCarousel" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right"></i>
       </button>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
     </div>
   </section>
 
-  <!-- ===== DANH SÁCH SẢN PHẨM ===== -->
-  <main id="san-pham-list" class="sp-page-main py-4 py-md-5">
-    <div class="container d-flex flex-column gap-4 gap-md-5">
+  <!-- Nội dung chính: Sidebar + Danh mục sản phẩm -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12">
+          <!-- PHÒNG KHÁCH -->
+          <section id="phong-khach" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">PHÒNG KHÁCH</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pk-1.jpg" alt="Bàn uống nước" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn uống nước</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">8.990.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pk-2.jpg" alt="Kệ TV" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Kệ TV</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">5.500.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pk-3.jpg" alt="Sofa góc" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Sofa góc chữ L</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">18.000.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pk-4.jpg" alt="Kệ đồ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Kệ trang trí</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">3.200.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
 
-      <!-- 1. PHÒNG KHÁCH -->
-      <section id="phong-khach" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">PHÒNG KHÁCH</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/phong-khach-ban-uong-nuoc.png" alt="Bàn uống nước" loading="lazy" class="sp-card__img">
+          <!-- PHÒNG NGỦ -->
+          <section id="phong-ngu" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">PHÒNG NGỦ</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pn-1.jpg" alt="Giường đôi" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Giường đôi gỗ sồi</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">12.500.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN UỐNG NƯỚC</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pn-2.jpg" alt="Tủ quần áo" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tủ quần áo 4 cánh</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">9.800.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pn-3.jpg" alt="Bàn đầu giường" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn đầu giường</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">2.100.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pn-4.jpg" alt="Bàn trang điểm" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn trang điểm</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">4.500.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/phong-khach-ban-uong-nuoc-2.png" alt="Bàn uống nước 2" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN UỐNG NƯỚC 2</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/phong-khach-ke-ti-vi.png" alt="Kệ TV" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">KỆ TV</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-1.jpg" alt="Kệ để đồ" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">KỆ ĐỂ ĐỒ</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">2.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 2. PHÒNG NGỦ -->
-      <section id="phong-ngu" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">PHÒNG NGỦ</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/giuong-ngu.png" alt="Giường châu Âu" loading="lazy" class="sp-card__img">
+          <!-- PHÒNG BẾP -->
+          <section id="phong-bep" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">PHÒNG BẾP</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pb-1.jpg" alt="Bàn ăn gỗ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn ăn 6 ghế</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">22.000.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GIƯỜNG CHÂU ÂU</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pb-2.jpg" alt="Tủ bếp" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tủ bếp chữ L</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">35.000.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pb-3.jpg" alt="Ghế bếp" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Ghế ăn bọc da</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">1.200.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pb-4.jpg" alt="Kệ bếp" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Kệ đựng đồ bếp</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">2.800.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-2.jpg" alt="Giường gỗ" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GIƯỜNG GỖ</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/ke-dau-giuong.png" alt="Kệ đầu giường" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">KỆ ĐẦU GIƯỜNG</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-3.jpg" alt="Tủ quần áo" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">TỦ QUẦN ÁO</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 3. PHÒNG BẾP -->
-      <section id="phong-bep" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">PHÒNG BẾP</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-1.jpg" alt="Bàn ăn 6" loading="lazy" class="sp-card__img">
+          <!-- PHÒNG TẮM -->
+          <section id="phong-tam" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">PHÒNG TẮM</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pt-1.jpg" alt="Tủ nhà tắm" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tủ nhà tắm gỗ</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">6.500.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN ĂN 6</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pt-2.jpg" alt="Kệ phòng tắm" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Kệ phòng tắm</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">1.800.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pt-3.jpg" alt="Gương phòng tắm" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Gương kệ phòng tắm</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">2.500.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/pt-4.jpg" alt="Bàn nhà tắm" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn ghế nhà tắm</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">3.100.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-2.jpg" alt="Bàn trà" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN TRÀ</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-3.jpg" alt="Bàn ăn 4" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN ĂN 4</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="pictures/san-pham-noi-bat/sp-4.jpg" alt="Bàn ăn 8" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN ĂN 8</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 4. PHÒNG TẮM -->
-      <section id="phong-tam" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">PHÒNG TẮM</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-1.jpg" alt="Bồn rửa mặt" loading="lazy" class="sp-card__img">
+          <!-- TRẺ EM -->
+          <section id="tre-em" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">TRẺ EM</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/te-1.jpg" alt="Giường tầng" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Giường tầng trẻ em</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">8.200.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BỒN RỬA MẶT</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/te-2.jpg" alt="Bàn học" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn học sinh</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">2.900.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/te-3.jpg" alt="Tủ đồ chơi" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tủ đồ chơi trẻ em</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">3.400.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/te-4.jpg" alt="Ghế trẻ em" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Ghế học sinh</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">950.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-2.jpg" alt="Bồn rửa tay" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BỒN RỬA TAY</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-3.jpg" alt="Bồn rửa 2" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BỒN RỬA 2</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-4.jpg" alt="Tủ âm tường" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">TỦ ÂM TƯỜNG</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 5. TRẺ EM -->
-      <section id="tre-em" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">TRẺ EM</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-1.jpg" alt="Bàn học" loading="lazy" class="sp-card__img">
+          <!-- VĂN PHÒNG -->
+          <section id="van-phong" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">VĂN PHÒNG</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/vp-1.jpg" alt="Bàn làm việc" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bàn làm việc</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">4.500.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN HỌC</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/vp-2.jpg" alt="Tủ hồ sơ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tủ hồ sơ văn phòng</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">7.200.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/vp-3.jpg" alt="Ghế giám đốc" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Ghế giám đốc</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">6.800.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/vp-4.jpg" alt="Kệ sách" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Kệ sách văn phòng</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">3.600.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-2.jpg" alt="Giường tầng" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GIƯỜNG TẦNG</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-3.jpg" alt="Giường tầng 2" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GIƯỜNG TẦNG 2</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-4.jpg" alt="Cũi trẻ em" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">CŨI TRẺ EM</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 6. VĂN PHÒNG -->
-      <section id="van-phong" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">VĂN PHÒNG</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-1.jpg" alt="Ghế văn phòng" loading="lazy" class="sp-card__img">
+          <!-- CẦU THANG -->
+          <section id="cau-thang" class="sp-category-section mb-5">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">CẦU THANG</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/tt-1.jpg" alt="Cầu thang gỗ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Cầu thang xoắn gỗ</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">Liên hệ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GHẾ VĂN PHÒNG</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/tt-2.jpg" alt="Tay vịn cầu thang" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tay vịn cầu thang</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">Liên hệ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/tt-3.jpg" alt="Bậc thang gỗ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bậc thang gỗ tự nhiên</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">Liên hệ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/tt-4.jpg" alt="Cầu thang kính gỗ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Cầu thang kính gỗ</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">Liên hệ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-2.jpg" alt="Bàn làm việc" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN LÀM VIỆC</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-3.jpg" alt="Bàn làm việc 2" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">BÀN LÀM VIỆC 2</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-4.jpg" alt="Giá sách" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GIÁ SÁCH</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 7. CẦU THANG -->
-      <section id="cau-thang" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">CẦU THANG</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-1.jpg" alt="Cầu thang 1" loading="lazy" class="sp-card__img">
+          <!-- ĐỒ TRANG TRÍ -->
+          <section id="trang-tri" class="sp-category-section">
+            <div class="sp-category-header d-flex justify-content-between align-items-center mb-3">
+              <h2 class="sp-category-title">ĐỒ TRANG TRÍ</h2>
+              <a href="tat-ca-san-pham.html" class="sp-view-all">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/sp-1.jpg" alt="Đèn trang trí" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Đèn trang trí</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">1.500.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">CẦU THANG 1</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/sp-2.jpg" alt="Tranh trang trí" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Tranh treo tường</h3>
+                    <div class="sp-card-stars">★★★★☆</div>
+                    <div class="sp-card-price">800.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/sp-3.jpg" alt="Đồng hồ gỗ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Đồng hồ gỗ trang trí</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">650.000 VNĐ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#" class="sp-card text-decoration-none">
+                  <div class="sp-card-img-wrap">
+                    <img src="img/sp-4.jpg" alt="Bình hoa gỗ" loading="lazy">
+                  </div>
+                  <div class="sp-card-body">
+                    <h3 class="sp-card-name">Bình hoa gỗ cao cấp</h3>
+                    <div class="sp-card-stars">★★★★★</div>
+                    <div class="sp-card-price">450.000 VNĐ</div>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-2.jpg" alt="Cầu thang 2" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">CẦU THANG 2</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-3.jpg" alt="Cầu thang 3" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">CẦU THANG 3</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-4.jpg" alt="Cầu thang 4" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">CẦU THANG 4</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- 8. TRANG TRÍ -->
-      <section id="trang-tri" class="sp-category">
-        <div class="sp-category__header d-flex justify-content-between align-items-center">
-          <h2 class="sp-category__title">TRANG TRÍ</h2>
-          <a href="tat-ca-san-pham.html" class="sp-category__link">XEM TẤT CẢ</a>
-        </div>
-        <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4">
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-1.jpg" alt="Gương 1" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GƯƠNG 1</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, trắng sữa)</div>
-                <div class="sp-card__price">8.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-2.jpg" alt="Gương 2" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GƯƠNG 2</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(Size vừa, nâu vân gỗ)</div>
-                <div class="sp-card__price">3.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-3.jpg" alt="Ghế đôn" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">GHẾ ĐÔN</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(2 ngăn, gỗ lim)</div>
-                <div class="sp-card__price">12.999.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="sp-card">
-              <div class="sp-card__img-wrap">
-                <img src="img/sp-4.jpg" alt="Đèn chùm" loading="lazy" class="sp-card__img">
-              </div>
-              <div class="sp-card__body">
-                <h3 class="sp-card__name">ĐÈN CHÙM</h3>
-                <div class="sp-card__stars">★★★★★</div>
-                <div class="sp-card__desc">(4 ngăn, trắng gỗ)</div>
-                <div class="sp-card__price">12.499.000 VNĐ</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
+        </div><!-- end col products -->
+      </div><!-- end row -->
+    </div><!-- end container -->
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Footer -->
   <footer class="site-footer bg-dark text-white-50 pt-5">
     <div class="container">
       <div class="row g-4">
         <div class="col-12 col-md-5">
-          <h4 class="footer-heading text-white fw-bold pb-2 mb-3">
-            THÔNG TIN CHUNG
-          </h4>
+          <h4 class="footer-heading text-white fw-bold pb-2 mb-3">THÔNG TIN CHUNG</h4>
           <div class="text-white fw-bold mb-2">CÔNG TY TNHH HOÀNG HOAN</div>
-          <div class="d-flex align-items-center gap-2 mb-2 small">
-            <i class="fa-solid fa-phone text-gold"></i> 0999.999.999
-          </div>
-          <div class="d-flex align-items-center gap-2 mb-2 small">
-            <i class="fa-solid fa-envelope text-white"></i> cskh@hoanghoan.vn
-          </div>
-          <div class="d-flex align-items-center gap-2 mb-2 small">
-            <i class="fa-solid fa-location-dot text-white"></i> Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội
-          </div>
+          <div class="d-flex align-items-center gap-2 mb-2 small"><i class="fa-solid fa-phone text-gold"></i> 0999.999.999</div>
+          <div class="d-flex align-items-center gap-2 mb-2 small"><i class="fa-solid fa-envelope text-white"></i> cskh@hoanghoan.vn</div>
+          <div class="d-flex align-items-center gap-2 mb-2 small"><i class="fa-solid fa-location-dot text-white"></i> Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội</div>
         </div>
         <div class="col-12 col-md-3">
-          <h4 class="footer-heading text-white fw-bold pb-2 mb-3">
-            VỀ CHÚNG TÔI
-          </h4>
+          <h4 class="footer-heading text-white fw-bold pb-2 mb-3">VỀ CHÚNG TÔI</h4>
           <ul class="list-unstyled d-flex flex-column gap-2 mb-0 small">
-            <li>
-              <a href="gioi-thieu.html" class="text-white-50 text-decoration-none">Giới thiệu</a>
-            </li>
-            <li>
-              <a href="san-pham.html" class="text-white-50 text-decoration-none">Sản phẩm</a>
-            </li>
-            <li>
-              <a href="tin-tuc.html" class="text-white-50 text-decoration-none">Tin tức</a>
-            </li>
-            <li>
-              <a href="doi-tac.html" class="text-white-50 text-decoration-none">Đối tác</a>
-            </li>
-            <li>
-              <a href="index.html#lien-he" class="text-white-50 text-decoration-none">Liên hệ</a>
-            </li>
+            <li><a href="gioi-thieu.html" class="text-white-50 text-decoration-none">Giới thiệu</a></li>
+            <li><a href="san-pham.html" class="text-white-50 text-decoration-none">Sản phẩm</a></li>
+            <li><a href="tin-tuc.html" class="text-white-50 text-decoration-none">Tin tức</a></li>
+            <li><a href="doi-tac.html" class="text-white-50 text-decoration-none">Đối tác</a></li>
+            <li><a href="index.html#lien-he" class="text-white-50 text-decoration-none">Liên hệ</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
-          <h4 class="footer-heading text-white fw-bold pb-2 mb-3">
-            KẾT NỐI VỚI CHÚNG TÔI
-          </h4>
+          <h4 class="footer-heading text-white fw-bold pb-2 mb-3">KẾT NỐI VỚI CHÚNG TÔI</h4>
           <div class="d-flex gap-2 mb-3">
             <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-btn" aria-label="Zalo">Z</a>
+            <a href="#" class="social-btn text-decoration-none fw-bold" aria-label="Zalo">Z</a>
             <a href="#" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
-          <img
-            src="img/bct.png"
-            alt="Bộ Công Thương"
-            style="max-width: 130px"
-          />
+          <img src="img/bct.png" alt="Bộ Công Thương" style="max-width: 130px">
         </div>
       </div>
-      <div
-        class="footer-bottom mt-4 py-3 text-center border-top border-secondary border-opacity-25 small"
-      >
+      <div class="footer-bottom mt-4 py-3 text-center border-top border-secondary border-opacity-25 small">
         <p class="mb-0">2024 Hoàng Hoan. Tất cả quyền được bảo lưu.</p>
       </div>
     </div>

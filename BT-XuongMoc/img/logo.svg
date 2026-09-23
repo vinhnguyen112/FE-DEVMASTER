@@ -1,0 +1,5 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="25" y="5" width="36" height="36" rx="3" transform="rotate(45 25 5)" stroke="#1d2836" stroke-width="4.5" fill="none"/>
+  <path d="M17 21V39M17 30H24M24 21V39M28 21V39M28 30H35M35 21V39" stroke="#1d2836" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="60" y="36" font-family="sans-serif" font-weight="bold" font-size="18" fill="#1d2836" letter-spacing="1">HOÀNG HOAN</text>
+</svg>
